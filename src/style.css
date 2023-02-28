@@ -1,6 +1,6 @@
 body {
     font-family: arial;
-    background: white;
+    background: #bbe4e9;;
 }
 
 .container {
@@ -8,14 +8,24 @@ body {
     margin: 0 auto;
 }
 
-
+.instagram-media{
+    aspect-ratio: 16/9;
+}
+.twitter-tweet{
+aspect-ratio: 16/9;
+}
 .grid {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 60px;
+}
+
+.card-header.grid {
+grid-gap: 0;
 }
 
 .img-responsive {
-    max-width: 100%;
+    width: 100%;
+    display: block;
 }
 
 .grid-2-col {
@@ -26,8 +36,12 @@ body {
     grid-template-columns: 1fr 2fr 2fr;
 }
 
-.grid-3-columns {
+.grid-3-cols {
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.instagram-embeds {
+    margin: 30px 0;
 }
 
 .card {
@@ -68,17 +82,19 @@ section {
 }
 
 section.secondary {
-    background: #f8f8f8;
+    background: #f8f8f8ec;
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url("../src/antonio.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
     text-align: center;
     padding: 200px 0;
+    
 }
 
 header h1 {
@@ -117,6 +133,10 @@ header a {
     text-transform: uppercase;
     background: white;
 }
+.embed{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
 
 main {
     background-color: white;
@@ -148,6 +168,31 @@ main p {
     line-height: 1.5;
     color: #2f6996;
     opacity: 0.7;
+}
+
+main .paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2f6996;
+    opacity: 0.7;
+}
+
+main h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: #2f6996;
+    margin: 0;
+}
+
+main h5 {
+    font-weight: 700;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1;
+    color: #2f6996;
 }
 
 footer{
@@ -215,12 +260,19 @@ footer a {
     header h3 {
         font-size: 12px;
     }
-        .grid {
+    
+    .grid {
             grid-template-columns: 1fr;
             grid-gap: 32px;
         }
     
         section {
             padding: 30px;
+        }
+        .card-header img{
+            display: none;
+        }
+        .embed{
+            aspect-ratio: 16/9;
         }
 }
